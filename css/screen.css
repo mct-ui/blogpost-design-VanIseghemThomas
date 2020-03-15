@@ -80,9 +80,9 @@ h1, h2, h3{
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 58px;
     font-weight: normal;
-    line-height: 40px;
+    line-height: 72px;
     margin: 0 0 24px;
     font-family: "Playfair Display", serif;
 }
@@ -212,6 +212,7 @@ a:focus {
     height: 56px;
     border-radius: 100%;
     margin-right: 16px;
+    margin-bottom: 24px;
 }
 
 /*
@@ -234,6 +235,24 @@ a:focus {
     padding: 0 24px;
 }
 
+.c-article__date{
+    color: #5C6366;
+    margin-bottom: 0;
+}
+
+/*
+
+    Components: Blockquote
+
+*/
+
+.c-quote{
+    color: #00B37D;
+    background: #F2FAF8;
+    padding: 18px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
 
 /*
     Utilities: max-width
@@ -243,11 +262,25 @@ a:focus {
 */
 
 .u-max-width-sm{
-    min-width: 36em;
+    min-width: 20em;
+}
+
+/* Smartphone portrait */
+
+@media (min-width: 200px) {
+    .c-article__title{
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .c-article__title{
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -260,6 +293,10 @@ a:focus {
     }
     .c-article__body{
         padding: 24px 48px;
+    }
+    .c-article__title{
+        font-size: 48px;
+        line-height: 52px;
     }
 
 }
@@ -287,6 +324,11 @@ a:focus {
 
     .c-author__image{
         margin-bottom: 16px;
+    }
+    
+    .c-article__title{
+        font-size: 52px;
+        line-height: 64px;
     }
 }
 
